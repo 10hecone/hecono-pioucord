@@ -1,15 +1,14 @@
 import { client } from "../../index.js";
 
 export class CommandManager {
-    constructor({name, description, options, category, ownerOnly}) {
+    constructor({name, description, options, category}) {
         this.name = name;
         this.description = description;
         this.options = [];
-        this.ownerOnly = ownerOnly;
     };
 
     pushCommand() {
-        client.commands.set(this.name, { name: this.name, description: this.description, options: this.options, ownerOnly: this.ownerOnly});
+        client.commands.set(this.name, { name: this.name, description: this.description, options: this.options});
     };
 
     addSubcommandGroup({name, description, category}) {
