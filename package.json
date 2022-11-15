@@ -1,0 +1,21 @@
+{
+    "name": "hecono",
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "engines": {
+        "node": "16.15.1"
+    },
+    "author": "Hecone",
+    "license": "ISC",
+    "type": "module",
+    "dependencies": {
+        "js-yaml": "^4.1.0",
+        "node-fetch": "^3.3.0",
+        "pioucord": "^1.0.3"
+    }
+}
